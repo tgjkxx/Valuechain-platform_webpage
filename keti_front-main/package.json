@@ -1,0 +1,36 @@
+{
+  "name": "keti-valuechain-front",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon --watch api --exec \"nuxt\"",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "core-js": "^3.25.3",
+    "nuxt": "^2.17.3",
+    "vue": "^2.7.10",
+    "vue-daum-postcode": "^1.2.1",
+    "vue-server-renderer": "^2.7.10",
+    "vue-slide-toggle": "^1.1.1",
+    "vue-template-compiler": "^2.7.10"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^4.5.2",
+    "nodemon": "^3.1.0",
+    "sass": "^1.71.1",
+    "sass-loader": "^10.5.2",
+    "terser-webpack-plugin": "^4.2.3",
+    "vue-loader": "^15.11.1",
+    "webpack": "^4.47.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "8090"
+    }
+  }
+}

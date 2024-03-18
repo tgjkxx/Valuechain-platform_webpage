@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KETI 밸류체인 플랫폼</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="format-detection" content="telephone=no" />
+	    <meta name="description" content="KETI 밸류체인 플랫폼">
+        <link href="css/common.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <!-- 상단 메뉴 영역 시작-->
+                <div class="gnb-wrap">
+                    <a href="#" class="logo">KETI 밸류체인 플랫폼</a>
+                    <ul class="gnb">
+                        <li class="active"><a href="#" class="gnb-text">플랫폼 개요</a></li>
+                        <li><a href="#" class="gnb-text">데이터 조회</a></li>
+                        <li><a href="#" class="gnb-text">데이터 신청</a></li>
+                        <li><a href="#" class="gnb-text">알림 소식</a></li>
+                    </ul>
+                    <button class="gnb_toggleBtn">menu</button>
+                    <div class="util">
+                        <button type="button" class="btn-primary-s">로그인</button>
+                    </div>
+                </div>
+                <!-- 상단 메뉴 영역 끝-->
+            </header>
+
+
+            <!-- 타이틀 영역 시작-->
+            <div class="title-wrapper gnb_01">
+                <div class="inner">
+                    <h1>플랫폼 개요</h1>
+                    <div class="location">
+                        <ul>
+                            <li><img src="/images/icon/home.svg"></li>
+                            <li><img src="/images/icon/chevron-right-s.svg"></li>
+                            <li>플랫폼 개요</li>
+                            <li><img src="/images/icon/chevron-right-s.svg"></li>
+                            <li>데이터 제공 절차</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 타이틀 영역 끝-->
+
+
+            <!-- 탭 메뉴 영역 시작 -->
+            <div class="lnb-wrap">
+                <div class="lnb">
+                    <ul>
+                        <li><a href="#" class="lnb-text">과제 소개</a></li>
+                        <li><a href="#" class="lnb-text">플랫폼 소개</a></li>
+                        <li class="active"><a href="#" class="lnb-text">데이터 제공 절차</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 탭 메뉴 영역 끝 -->
+
+
+            <!-- 컨텐츠 영역 시작 -->
+            <div class="content-wrapper mB100">
+                <div class="inner">
+                    <h3>데이터 제공 절차도</h3>
+                    <div class="data_process_area">
+                        <img src="/images/data_process.png">
+                    </div>
+                    <div class="data_process_mobile_area">
+                        <img src="/images/data_process_mobile.png">
+                    </div>
+                </div>
+            </div>
+            <!-- 컨텐츠 영역 끝 -->
+
+
+
+            <!-- 하단 푸터 영역 시작-->
+            <footer class="footer">
+                <div class="inner_pc">
+                    <p>경기도 성남시 분당구 새나리로 25 (야탑동) KETI 한국전자기술연구원 <span>｜</span> TEL : 031-421-3414 <span>｜</span> FAX : 031-421-3422</p>
+                    <p class="mB20">대표 : 000 <span>｜</span> 개인정보관리책임자 : OOO <span>｜</span> 팩스 : 031-123-4567<span>｜</span> 이메일 : abc@keti.re.kr</p>
+                    <div class="link_area">
+                        <p>Copyright(C) 2016 KOREA ELECTRONICS TECHNOLOGY INSTITUTE., All Rights Reserved.</p>
+                        <div>
+                            <a href="#">개인정보취급방침</a>
+                            <a href="#" class="mL15">이용약관</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner_mobile">
+                    <p>경기도 성남시 분당구 새나리로 25 (야탑동) KETI 한국전자기술연구원 <br> TEL : 031-421-3414 <span>｜</span> FAX : 031-421-3422</p>
+                    <p class="mB20">대표 : 000 <span>｜</span> 개인정보관리책임자 : OOO <br> 팩스 : 031-123-4567<span>｜</span> 이메일 : abc@keti.re.kr</p>
+                    <div class="link_area">
+                        <p>Copyright(C) 2016 KOREA ELECTRONICS TECHNOLOGY INSTITUTE., All Rights Reserved.</p>
+                        <div>
+                            <a href="#">개인정보취급방침</a>
+                            <a href="#" class="mL10">이용약관</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- 하단 푸터 영역 끝-->
+
+
+        </div>
+
+        <!-- header style JavaScript -->
+        <script>
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    var scroll = $(window).scrollTop();
+                    if (scroll > 1) {
+                    $("header").css("background" , "rgba(255, 255, 255)");
+                    $(".gnb-text").css("color" , "#242424");
+                    $(".logo").css("background" , "url('images/logo_02.svg')no-repeat");
+                    $(".gnb_toggleBtn").css("background" , "url('images/icon/menu-burger_02.svg')no-repeat");
+                    $(".gnb_toggleBtn").css("background-size" , "30px");
+                    }
+                    else{
+                    $("header").css("background" , "rgba(255, 255, 255, 0)");
+                    $(".gnb-text").css("color" , "#ECEDF0");
+                    $(".logo").css("background" , "url('images/logo.svg')no-repeat");
+                    $(".gnb_toggleBtn").css("background" , "url('images/icon/menu-burger.svg')no-repeat");
+                    $(".gnb_toggleBtn").css("background-size" , "30px");
+                    }
+                })
+            })
+        </script>
+
+        <!-- header mobile style JavaScript -->
+        <script>
+            const toggleBtn = document.querySelector('.gnb_toggleBtn');
+            const menu = document.querySelector('.gnb');
+            const icons = document.querySelector('.util');
+
+            toggleBtn.addEventListener('click' , ()=>{
+                menu.classList.toggle('menuActive');
+            });
+        </script>
+
+
+    </body>
+</html>
